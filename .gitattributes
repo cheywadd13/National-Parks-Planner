@@ -1,0 +1,9 @@
+# Preserve immutable source bytes so provenance hashes survive every clone.
+* text=auto
+reports/** -text
+data/** -text
+*.png binary
+*.jpg binary
+*.pdf binary
+
+*.pptx binary

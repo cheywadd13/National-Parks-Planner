@@ -1,0 +1,31 @@
+.streamlit/secrets.toml
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.log
+.DS_Store
+.streamlit/secrets*.toml
+!.streamlit/secrets.toml.example
+SupabaseString*.txt
+*.key
+reports/openai_call_receipts.jsonl
+
+# Local configuration and temporary development artifacts
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.p12
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+*.tmp
+*.bak
+reports/*_test_log.txt
+
+# Microsoft Office lock files
+~$*
