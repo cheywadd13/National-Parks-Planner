@@ -2,7 +2,7 @@
 
 ## When should you visit, and what can you do there?
 
-A forest-themed Streamlit travel planner combining historical weather, recreation visitation, official park guides, reviewed hikes, and an optional API-powered travel assistant. One solo project for **Databases for Data Science** and **Programming for Data Science**. AI-assisted development is disclosed in the reports. No predictive machine learning or visitation forecasting.
+A forest-themed Streamlit travel planner combining historical weather, recreation visitation, official park guides, reviewed hikes, and an optional API-powered travel assistant. Project for **Databases for Data Science** and **Programming for Data Science**. AI-assisted development is disclosed in the reports.
 
 ![Actual park guide](docs/screenshots/park-guide.jpg)
 
