@@ -1,0 +1,10 @@
+{
+  "run": 49,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "verified_utc": "2026-11-23T14:05:08.723721+00:00",
+  "database_writes": 0,
+  "live_supabase_tests": true,
+  "provider_tests": "mocked; actual API calls verified separately"
+}

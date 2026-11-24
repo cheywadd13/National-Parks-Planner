@@ -1,0 +1,365 @@
+{
+  "verified_utc": "2026-11-23T04:25:18.353635+00:00",
+  "database_writes": 0,
+  "checks": [
+    {
+      "park_code": "ZION",
+      "difficulty": "Moderate",
+      "expected_trail_status": "matched",
+      "result": "PASS",
+      "evidence": {
+        "kind": "visit_and_hikes",
+        "message": "Historical visit timing and verified trails are evaluated independently.",
+        "rows": [
+          {
+            "park_code": "ZION",
+            "park_name": "Zion National Park",
+            "month": 10,
+            "years": 21,
+            "rank": 1,
+            "eligible_months": 12,
+            "avg_temp_c": 11.44,
+            "total_precip_mm": 20.6,
+            "total_snowfall_cm": 0.0,
+            "recreation_visits": 314966.0,
+            "crowd_percentile": 45.45,
+            "weather_score": 88.89,
+            "crowd_score": 54.55,
+            "score": 76.87
+          },
+          {
+            "trail_id": "ZION-watchman",
+            "park_code": "ZION",
+            "name": "Watchman Trail",
+            "source_url": "https://www.nps.gov/thingstodo/hike-watchman-trail.htm",
+            "distance_miles": 3.3,
+            "distance_basis": "round trip",
+            "difficulty": "Moderate",
+            "elevation_ft": null,
+            "elevation_kind": "Full-route elevation gain",
+            "duration": "1\u20132 hours",
+            "trailhead": "Zion Canyon Visitor Center: follow the plaza sidewalk past the shuttle stop to the crosswalk, then follow the river to the trail.",
+            "description": "Climb from the river to an overlook of the Watchman, lower Zion Canyon, sandstone towers and Springdale.",
+            "season_note": "NPS lists year-round use, with potential muddy or icy conditions in winter and monsoon season and limited summer shade. This is general guidance, not a current condition report.",
+            "restrictions": "NPS prohibits bikes and pets. The route has sandy, rocky, uneven surfaces and drop-offs.",
+            "measurement_note": "The 3.3-mile distance describes the published round trip. NPS accessibility data gives separate overlook and loop segments; a full-route total elevation gain is not reported and is not inferred by summing segments.",
+            "permit_note": "NPS lists no reservations, but this does not establish all permit or current access requirements. Park entrance fees apply; check official guidance.",
+            "checked_at": "2026-11-23T04:07:45.505477+00:00",
+            "sha256": "59d62c2cd9a0683a7084d0ffccf0b8101870a0eeaaae530504159ce9589154c1",
+            "raw_file": "59d62c2cd9a0683a7084d0ffccf0b8101870a0eeaaae530504159ce9589154c1.html",
+            "source_title": "Watchman Trail (U.S. National Park Service)"
+          }
+        ],
+        "historical": {
+          "kind": "best_months",
+          "rows": [
+            {
+              "park_code": "ZION",
+              "park_name": "Zion National Park",
+              "month": 10,
+              "years": 21,
+              "rank": 1,
+              "eligible_months": 12,
+              "avg_temp_c": 11.44,
+              "total_precip_mm": 20.6,
+              "total_snowfall_cm": 0.0,
+              "recreation_visits": 314966.0,
+              "crowd_percentile": 45.45,
+              "weather_score": 88.89,
+              "crowd_score": 54.55,
+              "score": 76.87
+            }
+          ],
+          "source": "Live Supabase read-only parameterized query",
+          "years": [
+            2005,
+            2025
+          ],
+          "preferences": {
+            "temperature": [
+              15,
+              24
+            ],
+            "weather": 65,
+            "crowds": 35,
+            "minimum_years": 3,
+            "years": [
+              2005,
+              2025
+            ]
+          },
+          "checked_at": "2026-11-23T04:25:17.626345+00:00",
+          "message": "Showing up to three matches (up to six for a month comparison). Medians use complete paired years. Quiet parks ranks absolute visits; crowd percentiles compare months within each park. Historical averages are not forecasts or trail conditions."
+        },
+        "trails": {
+          "kind": "hikes",
+          "rows": [
+            {
+              "trail_id": "ZION-watchman",
+              "park_code": "ZION",
+              "name": "Watchman Trail",
+              "source_url": "https://www.nps.gov/thingstodo/hike-watchman-trail.htm",
+              "distance_miles": 3.3,
+              "distance_basis": "round trip",
+              "difficulty": "Moderate",
+              "elevation_ft": null,
+              "elevation_kind": "Full-route elevation gain",
+              "duration": "1\u20132 hours",
+              "trailhead": "Zion Canyon Visitor Center: follow the plaza sidewalk past the shuttle stop to the crosswalk, then follow the river to the trail.",
+              "description": "Climb from the river to an overlook of the Watchman, lower Zion Canyon, sandstone towers and Springdale.",
+              "season_note": "NPS lists year-round use, with potential muddy or icy conditions in winter and monsoon season and limited summer shade. This is general guidance, not a current condition report.",
+              "restrictions": "NPS prohibits bikes and pets. The route has sandy, rocky, uneven surfaces and drop-offs.",
+              "measurement_note": "The 3.3-mile distance describes the published round trip. NPS accessibility data gives separate overlook and loop segments; a full-route total elevation gain is not reported and is not inferred by summing segments.",
+              "permit_note": "NPS lists no reservations, but this does not establish all permit or current access requirements. Park entrance fees apply; check official guidance.",
+              "checked_at": "2026-11-23T04:07:45.505477+00:00",
+              "sha256": "59d62c2cd9a0683a7084d0ffccf0b8101870a0eeaaae530504159ce9589154c1",
+              "raw_file": "59d62c2cd9a0683a7084d0ffccf0b8101870a0eeaaae530504159ce9589154c1.html",
+              "source_title": "Watchman Trail (U.S. National Park Service)"
+            }
+          ],
+          "coverage": [
+            {
+              "park_code": "ZION",
+              "catalog_count": 3,
+              "matched_count": 1,
+              "unrated_count": 1,
+              "available_difficulties": [
+                "Easy",
+                "Moderate",
+                "Not reported"
+              ],
+              "status": "matched",
+              "alternatives": [
+                {
+                  "name": "Riverside Walk",
+                  "difficulty": "Easy",
+                  "source_url": "https://www.nps.gov/thingstodo/hike-riverside-walk.htm"
+                },
+                {
+                  "name": "Pa'rus Trail",
+                  "difficulty": null,
+                  "source_url": "https://www.nps.gov/thingstodo/hike-pa-rus-trail.htm"
+                },
+                {
+                  "name": "Watchman Trail",
+                  "difficulty": "Moderate",
+                  "source_url": "https://www.nps.gov/thingstodo/hike-watchman-trail.htm"
+                }
+              ]
+            }
+          ],
+          "filters": {
+            "park_codes": [
+              "ZION"
+            ],
+            "difficulty": "Moderate"
+          },
+          "source": "Reviewed local NPS trail catalog (data/trails.json), not a Supabase trail table",
+          "message": "Showing up to three matching reviewed trails. Coverage is incomplete. Published difficulty ranges may include the requested grade; unknown ratings are excluded from a specific-grade search. Current permits and access need official confirmation."
+        }
+      }
+    },
+    {
+      "park_code": "BADL",
+      "difficulty": "Any",
+      "expected_trail_status": "no_data",
+      "result": "PASS",
+      "evidence": {
+        "kind": "visit_and_hikes",
+        "message": "Historical visit timing and verified trails are evaluated independently.",
+        "rows": [
+          {
+            "park_code": "BADL",
+            "park_name": "Badlands National Park",
+            "month": 10,
+            "years": 21,
+            "rank": 2,
+            "eligible_months": 12,
+            "avg_temp_c": 10.17,
+            "total_precip_mm": 28.4,
+            "total_snowfall_cm": 0.63,
+            "recreation_visits": 40128.0,
+            "crowd_percentile": 54.55,
+            "weather_score": 84.7,
+            "crowd_score": 45.45,
+            "score": 70.96
+          }
+        ],
+        "historical": {
+          "kind": "best_months",
+          "rows": [
+            {
+              "park_code": "BADL",
+              "park_name": "Badlands National Park",
+              "month": 10,
+              "years": 21,
+              "rank": 2,
+              "eligible_months": 12,
+              "avg_temp_c": 10.17,
+              "total_precip_mm": 28.4,
+              "total_snowfall_cm": 0.63,
+              "recreation_visits": 40128.0,
+              "crowd_percentile": 54.55,
+              "weather_score": 84.7,
+              "crowd_score": 45.45,
+              "score": 70.96
+            }
+          ],
+          "source": "Live Supabase read-only parameterized query",
+          "years": [
+            2005,
+            2025
+          ],
+          "preferences": {
+            "temperature": [
+              15,
+              24
+            ],
+            "weather": 65,
+            "crowds": 35,
+            "minimum_years": 3,
+            "years": [
+              2005,
+              2025
+            ]
+          },
+          "checked_at": "2026-11-23T04:25:17.988441+00:00",
+          "message": "Showing up to three matches (up to six for a month comparison). Medians use complete paired years. Quiet parks ranks absolute visits; crowd percentiles compare months within each park. Historical averages are not forecasts or trail conditions."
+        },
+        "trails": {
+          "kind": "hikes",
+          "rows": [],
+          "coverage": [
+            {
+              "park_code": "BADL",
+              "catalog_count": 0,
+              "matched_count": 0,
+              "unrated_count": 0,
+              "available_difficulties": [],
+              "status": "no_data",
+              "alternatives": []
+            }
+          ],
+          "filters": {
+            "park_codes": [
+              "BADL"
+            ],
+            "difficulty": "Any"
+          },
+          "source": "Reviewed local NPS trail catalog (data/trails.json), not a Supabase trail table",
+          "message": "Showing up to three matching reviewed trails. Coverage is incomplete. Published difficulty ranges may include the requested grade; unknown ratings are excluded from a specific-grade search. Current permits and access need official confirmation."
+        }
+      }
+    },
+    {
+      "park_code": "ACAD",
+      "difficulty": "Moderate",
+      "expected_trail_status": "no_matches",
+      "result": "PASS",
+      "evidence": {
+        "kind": "visit_and_hikes",
+        "message": "Historical visit timing and verified trails are evaluated independently.",
+        "rows": [
+          {
+            "park_code": "ACAD",
+            "park_name": "Acadia National Park",
+            "month": 10,
+            "years": 21,
+            "rank": 8,
+            "eligible_months": 12,
+            "avg_temp_c": 11.02,
+            "total_precip_mm": 128.5,
+            "total_snowfall_cm": 0.0,
+            "recreation_visits": 344362.0,
+            "crowd_percentile": 72.73,
+            "weather_score": 74.39,
+            "crowd_score": 27.27,
+            "score": 57.9
+          }
+        ],
+        "historical": {
+          "kind": "best_months",
+          "rows": [
+            {
+              "park_code": "ACAD",
+              "park_name": "Acadia National Park",
+              "month": 10,
+              "years": 21,
+              "rank": 8,
+              "eligible_months": 12,
+              "avg_temp_c": 11.02,
+              "total_precip_mm": 128.5,
+              "total_snowfall_cm": 0.0,
+              "recreation_visits": 344362.0,
+              "crowd_percentile": 72.73,
+              "weather_score": 74.39,
+              "crowd_score": 27.27,
+              "score": 57.9
+            }
+          ],
+          "source": "Live Supabase read-only parameterized query",
+          "years": [
+            2005,
+            2025
+          ],
+          "preferences": {
+            "temperature": [
+              15,
+              24
+            ],
+            "weather": 65,
+            "crowds": 35,
+            "minimum_years": 3,
+            "years": [
+              2005,
+              2025
+            ]
+          },
+          "checked_at": "2026-11-23T04:25:18.352630+00:00",
+          "message": "Showing up to three matches (up to six for a month comparison). Medians use complete paired years. Quiet parks ranks absolute visits; crowd percentiles compare months within each park. Historical averages are not forecasts or trail conditions."
+        },
+        "trails": {
+          "kind": "hikes",
+          "rows": [],
+          "coverage": [
+            {
+              "park_code": "ACAD",
+              "catalog_count": 3,
+              "matched_count": 0,
+              "unrated_count": 3,
+              "available_difficulties": [
+                "Not reported"
+              ],
+              "status": "no_matches",
+              "alternatives": [
+                {
+                  "name": "Ocean Path",
+                  "difficulty": null,
+                  "source_url": "https://www.nps.gov/thingstodo/hike-ocean-path-trail.htm"
+                },
+                {
+                  "name": "Jordan Pond Path",
+                  "difficulty": null,
+                  "source_url": "https://www.nps.gov/thingstodo/hike-jordan-pond-path.htm"
+                },
+                {
+                  "name": "Gorham Mountain Loop",
+                  "difficulty": null,
+                  "source_url": "https://www.nps.gov/thingstodo/hike-gorham-mountain-loop.htm"
+                }
+              ]
+            }
+          ],
+          "filters": {
+            "park_codes": [
+              "ACAD"
+            ],
+            "difficulty": "Moderate"
+          },
+          "source": "Reviewed local NPS trail catalog (data/trails.json), not a Supabase trail table",
+          "message": "Showing up to three matching reviewed trails. Coverage is incomplete. Published difficulty ranges may include the requested grade; unknown ratings are excluded from a specific-grade search. Current permits and access need official confirmation."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="840" viewBox="0 0 1200 840">
+<rect width="1200" height="840" fill="#faf8f0"/>
+<text x="54" y="57" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#153d2f">National Parks Explorer</text>
+<text x="54" y="90" font-family="Arial,sans-serif" font-size="16" fill="#526c60">Live PostgreSQL schema · keys, grain and enforced relationships</text>
+<rect x="54" y="225" width="340" height="254" rx="14" fill="#ffffff" stroke="#c4d4c6" stroke-width="1.5"/>
+<path d="M68 225H380Q394 225 394 239V277H54V239Q54 225 68 225" fill="#174e3a"/>
+<text x="74" y="259" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fffdf5">PARKS</text>
+<text x="74" y="309" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">PK       park_code       varchar</text>
+<text x="74" y="340" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">         park_name       text</text>
+<text x="74" y="371" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">         state           varchar</text>
+<text x="74" y="402" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">         latitude        float8</text>
+<text x="74" y="433" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">         longitude       float8</text>
+<text x="74" y="462" font-family="Arial,sans-serif" font-size="13" fill="#637969">63 reporting records</text>
+<rect x="610" y="130" width="535" height="223" rx="14" fill="#ffffff" stroke="#c4d4c6" stroke-width="1.5"/>
+<path d="M624 130H1131Q1145 130 1145 144V182H610V144Q610 130 624 130" fill="#174e3a"/>
+<text x="630" y="164" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fffdf5">VISITATION</text>
+<text x="630" y="214" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">PK / FK  park_code       varchar</text>
+<text x="630" y="245" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">PK       year            integer</text>
+<text x="630" y="276" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">PK       month           integer</text>
+<text x="630" y="307" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">         recreation_visits integer</text>
+<text x="630" y="336" font-family="Arial,sans-serif" font-size="13" fill="#637969">15,863 monthly records</text>
+<rect x="610" y="425" width="535" height="285" rx="14" fill="#ffffff" stroke="#c4d4c6" stroke-width="1.5"/>
+<path d="M624 425H1131Q1145 425 1145 439V477H610V439Q610 425 624 425" fill="#174e3a"/>
+<text x="630" y="459" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fffdf5">WEATHER</text>
+<text x="630" y="509" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">PK / FK  park_code       varchar</text>
+<text x="630" y="540" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">PK       year            integer</text>
+<text x="630" y="571" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">PK       month           integer</text>
+<text x="630" y="602" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">         avg_temp_c      float8</text>
+<text x="630" y="633" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">         total_precip_mm float8</text>
+<text x="630" y="664" font-family="Courier New,monospace" font-size="15" xml:space="preserve" fill="#1c392c">         total_snowfall_cm float8</text>
+<text x="630" y="693" font-family="Arial,sans-serif" font-size="13" fill="#637969">15,876 monthly records</text>
+<path d="M394 315 H475 V215 H594" fill="none" stroke="#38664b" stroke-width="2"/>
+<path d="M410 306 V324 M416 306 V324" stroke="#38664b" stroke-width="2"/>
+<circle cx="574" cy="215" r="5" fill="#faf8f0" stroke="#38664b" stroke-width="2"/>
+<path d="M594 215 L610 205 M594 215 L610 215 M594 215 L610 225" stroke="#38664b" stroke-width="2"/>
+<path d="M394 405 H475 V510 H594" fill="none" stroke="#38664b" stroke-width="2"/>
+<path d="M410 396 V414 M416 396 V414" stroke="#38664b" stroke-width="2"/>
+<circle cx="574" cy="510" r="5" fill="#faf8f0" stroke="#38664b" stroke-width="2"/>
+<path d="M594 510 L610 500 M594 510 L610 510 M594 510 L610 520" stroke="#38664b" stroke-width="2"/>
+<text x="475" y="180" font-family="Arial,sans-serif" font-size="13" fill="#38664b">1 → 0..many</text>
+<text x="475" y="550" font-family="Arial,sans-serif" font-size="13" fill="#38664b">1 → 0..many</text>
+<rect x="54" y="585" width="445" height="115" rx="12" fill="#eaf0e6"/>
+<text x="73" y="613" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#174e3a">Normalization qualification</text>
+<text x="73" y="638" font-family="Arial,sans-serif" font-size="14" fill="#365443">state contains multiple memberships for some parks.</text>
+<text x="73" y="662" font-family="Arial,sans-serif" font-size="14" fill="#365443">Proposed park_state bridge requires owner approval.</text>
+<text x="54" y="748" font-family="Arial,sans-serif" font-size="14" fill="#365443">Monthly grain · (park_code, year, month). PK columns are NOT NULL. Non-key attributes are nullable.</text>
+<text x="54" y="773" font-family="Arial,sans-serif" font-size="14" fill="#365443">Both monthly tables reference parks. No direct weather-to-visitation FK exists. Same-month joins can be unmatched.</text>
+<text x="54" y="805" font-family="Arial,sans-serif" font-size="13" fill="#637969">SEKI combines visitation from SEQU and KICA; weather represents one point. Catalog inspected November 19, 2026.</text>
+</svg>

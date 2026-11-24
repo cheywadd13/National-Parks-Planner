@@ -1,0 +1,14 @@
+park_code,year,month,missing_visitation,missing_weather
+CHIS,2005,12,True,False
+NPSA,2005,1,True,False
+NPSA,2005,2,True,False
+NPSA,2005,3,True,False
+NPSA,2005,4,True,False
+NPSA,2005,5,True,False
+NPSA,2005,6,True,False
+NPSA,2005,7,True,False
+NPSA,2005,8,True,False
+NPSA,2005,9,True,False
+NPSA,2005,10,True,False
+NPSA,2005,11,True,False
+NPSA,2005,12,True,False

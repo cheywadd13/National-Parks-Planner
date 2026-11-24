@@ -1,0 +1,11 @@
+{
+  "slide_count": 12,
+  "speaker_notes_parts": 12,
+  "native_charts": 3,
+  "package_validation": "passed",
+  "layout_validation": "passed with zero findings",
+  "first_party_reimport": "passed",
+  "individual_slide_visual_review": "all 12 rendered and inspected; chart label units refined",
+  "native_powerpoint_execution": "not performed",
+  "sha256": "662e72e8ee91ed26d1af9bf9226fe5ba4a25dc0dc414fdca5a64fa0d33d1ad4f"
+}

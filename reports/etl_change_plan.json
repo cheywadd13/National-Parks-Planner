@@ -1,0 +1,20 @@
+{
+  "parks": {
+    "new_rows": 0,
+    "unchanged_rows": 63,
+    "conflicting_existing_rows": 0,
+    "existing_only_rows": 0
+  },
+  "visitation": {
+    "new_rows": 0,
+    "unchanged_rows": 15863,
+    "conflicting_existing_rows": 0,
+    "existing_only_rows": 0
+  },
+  "weather": {
+    "new_rows": 0,
+    "unchanged_rows": 202,
+    "conflicting_existing_rows": 4334,
+    "existing_only_rows": 11340
+  }
+}

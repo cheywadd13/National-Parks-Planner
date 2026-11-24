@@ -1,0 +1,24 @@
+{
+  "park_code": "ACAD",
+  "year": 2025,
+  "daily_rows": 365,
+  "monthly_rows": 12,
+  "raw_snapshot": "639127d3b0eb10720edb349a546c7af68bb8ac3cf1379f72344ea89182e6d336.json",
+  "all_months_matched": true,
+  "differences": {
+    "avg_temp_c": {
+      "maximum_absolute_difference": 5.3290705182007514e-14,
+      "months_different_above_1e_8": 0
+    },
+    "total_precip_mm": {
+      "maximum_absolute_difference": 0.0,
+      "months_different_above_1e_8": 0
+    },
+    "total_snowfall_cm": {
+      "maximum_absolute_difference": 0.0,
+      "months_different_above_1e_8": 0
+    }
+  },
+  "database_writes": 0,
+  "interpretation": "Fresh reanalysis may be revised since original ingestion. Original daily payloads are unavailable."
+}

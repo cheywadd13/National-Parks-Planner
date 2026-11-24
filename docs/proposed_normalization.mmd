@@ -1,0 +1,33 @@
+erDiagram
+    PARKS ||--o{ PARK_STATE : belongs_to
+    STATE ||--o{ PARK_STATE : contains
+    PARKS ||--o{ VISITATION : records
+    PARKS ||--o{ WEATHER : models
+    PARKS {
+        varchar park_code PK
+        text park_name
+        float8 latitude
+        float8 longitude
+    }
+    STATE {
+        varchar state_code PK
+        text state_name
+    }
+    PARK_STATE {
+        varchar park_code PK,FK
+        varchar state_code PK,FK
+    }
+    VISITATION {
+        varchar park_code PK,FK
+        int year PK
+        int month PK
+        int recreation_visits
+    }
+    WEATHER {
+        varchar park_code PK,FK
+        int year PK
+        int month PK
+        float8 avg_temp_c
+        float8 total_precip_mm
+        float8 total_snowfall_cm
+    }

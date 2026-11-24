@@ -1,0 +1,709 @@
+{
+  "verified_utc": "2026-11-23T14:02:21.830450+00:00",
+  "exact_question": "Where is a good national park that has climbing activities?",
+  "activity_source": "Reviewed dated official NPS profile catalog, not a Supabase activities table",
+  "exact_question_result": {
+    "kind": "activities",
+    "rows": [
+      {
+        "park_code": "ARCH",
+        "park_name": "Arches National Park",
+        "matches": [
+          {
+            "activity": "Climbing",
+            "label": "Rock Climbing",
+            "url": "https://www.nps.gov/arch/planyourvisit/rockclimbing.htm"
+          }
+        ],
+        "source_url": "https://www.nps.gov/arch/index.htm",
+        "checked_at": "2026-11-19T16:34:50.406661+00:00",
+        "source_kind": "Official NPS website snapshot",
+        "historical": null
+      },
+      {
+        "park_code": "BLCA",
+        "park_name": "Black Canyon Of The Gunnison National Park",
+        "matches": [
+          {
+            "activity": "Climbing",
+            "label": "Rock Climbing",
+            "url": "https://www.nps.gov/blca/planyourvisit/rockclimbing.htm"
+          }
+        ],
+        "source_url": "https://www.nps.gov/blca/index.htm",
+        "checked_at": "2026-11-19T16:34:51.669490+00:00",
+        "source_kind": "Official NPS website snapshot",
+        "historical": null
+      },
+      {
+        "park_code": "CANY",
+        "park_name": "Canyonlands National Park",
+        "matches": [
+          {
+            "activity": "Climbing",
+            "label": "Climbing",
+            "url": "https://www.nps.gov/cany/planyourvisit/climbing.htm"
+          }
+        ],
+        "source_url": "https://www.nps.gov/cany/index.htm",
+        "checked_at": "2026-11-19T16:34:51.592078+00:00",
+        "source_kind": "Official NPS website snapshot",
+        "historical": null
+      }
+    ],
+    "coverage": [
+      {
+        "park_code": "ACAD",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "ARCH",
+        "status": "matched"
+      },
+      {
+        "park_code": "BADL",
+        "status": "no_data"
+      },
+      {
+        "park_code": "BIBE",
+        "status": "no_data"
+      },
+      {
+        "park_code": "BISC",
+        "status": "no_data"
+      },
+      {
+        "park_code": "BLCA",
+        "status": "matched"
+      },
+      {
+        "park_code": "BRCA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "CANY",
+        "status": "matched"
+      },
+      {
+        "park_code": "CARE",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "CAVE",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "CHIS",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "CHIR",
+        "status": "no_data"
+      },
+      {
+        "park_code": "CONG",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "CRLA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "CUVA",
+        "status": "no_data"
+      },
+      {
+        "park_code": "DEVA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "DENA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "DRTO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "EVER",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GAAR",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "JEFF",
+        "status": "no_data"
+      },
+      {
+        "park_code": "GLBA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GLAC",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GRCA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GRTE",
+        "status": "matched"
+      },
+      {
+        "park_code": "GRBA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GRSA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GRSM",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GUMO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "HALE",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "HAVO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "HOSP",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "INDU",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "ISRO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "JOTR",
+        "status": "no_data"
+      },
+      {
+        "park_code": "KATM",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "KEFJ",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "KOVA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "LACL",
+        "status": "no_data"
+      },
+      {
+        "park_code": "LAVO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "MACA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "MEVE",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "MORA",
+        "status": "matched"
+      },
+      {
+        "park_code": "NPSA",
+        "status": "no_data"
+      },
+      {
+        "park_code": "NERI",
+        "status": "matched"
+      },
+      {
+        "park_code": "NOCA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "OLYM",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "PEFO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "PINN",
+        "status": "matched"
+      },
+      {
+        "park_code": "REDW",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "ROMO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "SAGU",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "SEKI",
+        "status": "matched"
+      },
+      {
+        "park_code": "SHEN",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "THRO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "VIIS",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "VOYA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "WHSA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "WICA",
+        "status": "no_data"
+      },
+      {
+        "park_code": "WRST",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "YELL",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "YOSE",
+        "status": "matched"
+      },
+      {
+        "park_code": "ZION",
+        "status": "matched"
+      }
+    ],
+    "matched_park_count": 10,
+    "activities": [
+      "Climbing"
+    ],
+    "historical_status": "not_requested",
+    "years": null,
+    "analysis_years": [
+      2005,
+      2025
+    ],
+    "months": [],
+    "message": "Verified NPS activity matches. Showing up to three parks; unlisted activities remain unconfirmed. These are sourced options, not a claim that these are the only or best parks nationwide."
+  },
+  "october_live_readonly_result": {
+    "kind": "activities",
+    "rows": [
+      {
+        "park_code": "PINN",
+        "park_name": "Pinnacles National Park",
+        "matches": [
+          {
+            "activity": "Climbing",
+            "label": "Climbing at Pinnacles",
+            "url": "https://www.nps.gov/pinn/planyourvisit/climb.htm"
+          }
+        ],
+        "source_url": "https://www.nps.gov/pinn/index.htm",
+        "checked_at": "2026-11-19T16:35:06.751974+00:00",
+        "source_kind": "Official NPS website snapshot",
+        "historical": {
+          "park_code": "PINN",
+          "park_name": "Pinnacles National Park",
+          "month": 10,
+          "years": 21,
+          "rank": 2,
+          "eligible_months": 12,
+          "avg_temp_c": 16.59,
+          "total_precip_mm": 6.9,
+          "total_snowfall_cm": 0.0,
+          "recreation_visits": 14084.0,
+          "crowd_percentile": 18.18,
+          "weather_score": 99.14,
+          "crowd_score": 81.82,
+          "score": 93.08
+        }
+      },
+      {
+        "park_code": "ARCH",
+        "park_name": "Arches National Park",
+        "matches": [
+          {
+            "activity": "Climbing",
+            "label": "Rock Climbing",
+            "url": "https://www.nps.gov/arch/planyourvisit/rockclimbing.htm"
+          }
+        ],
+        "source_url": "https://www.nps.gov/arch/index.htm",
+        "checked_at": "2026-11-19T16:34:50.406661+00:00",
+        "source_kind": "Official NPS website snapshot",
+        "historical": {
+          "park_code": "ARCH",
+          "park_name": "Arches National Park",
+          "month": 10,
+          "years": 21,
+          "rank": 1,
+          "eligible_months": 12,
+          "avg_temp_c": 12.56,
+          "total_precip_mm": 27.1,
+          "total_snowfall_cm": 0.0,
+          "recreation_visits": 115859.0,
+          "crowd_percentile": 45.45,
+          "weather_score": 90.75,
+          "crowd_score": 54.55,
+          "score": 78.08
+        }
+      },
+      {
+        "park_code": "ZION",
+        "park_name": "Zion National Park",
+        "matches": [
+          {
+            "activity": "Climbing",
+            "label": "Climbing",
+            "url": "https://www.nps.gov/zion/planyourvisit/climbing.htm"
+          }
+        ],
+        "source_url": "https://www.nps.gov/zion/index.htm",
+        "checked_at": "2026-11-19T16:35:11.334071+00:00",
+        "source_kind": "Official NPS website snapshot",
+        "historical": {
+          "park_code": "ZION",
+          "park_name": "Zion National Park",
+          "month": 10,
+          "years": 21,
+          "rank": 1,
+          "eligible_months": 12,
+          "avg_temp_c": 11.44,
+          "total_precip_mm": 20.6,
+          "total_snowfall_cm": 0.0,
+          "recreation_visits": 314966.0,
+          "crowd_percentile": 45.45,
+          "weather_score": 88.89,
+          "crowd_score": 54.55,
+          "score": 76.87
+        }
+      }
+    ],
+    "coverage": [
+      {
+        "park_code": "ACAD",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "ARCH",
+        "status": "matched"
+      },
+      {
+        "park_code": "BADL",
+        "status": "no_data"
+      },
+      {
+        "park_code": "BIBE",
+        "status": "no_data"
+      },
+      {
+        "park_code": "BISC",
+        "status": "no_data"
+      },
+      {
+        "park_code": "BLCA",
+        "status": "matched"
+      },
+      {
+        "park_code": "BRCA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "CANY",
+        "status": "matched"
+      },
+      {
+        "park_code": "CARE",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "CAVE",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "CHIS",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "CHIR",
+        "status": "no_data"
+      },
+      {
+        "park_code": "CONG",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "CRLA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "CUVA",
+        "status": "no_data"
+      },
+      {
+        "park_code": "DEVA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "DENA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "DRTO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "EVER",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GAAR",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "JEFF",
+        "status": "no_data"
+      },
+      {
+        "park_code": "GLBA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GLAC",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GRCA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GRTE",
+        "status": "matched"
+      },
+      {
+        "park_code": "GRBA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GRSA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GRSM",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "GUMO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "HALE",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "HAVO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "HOSP",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "INDU",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "ISRO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "JOTR",
+        "status": "no_data"
+      },
+      {
+        "park_code": "KATM",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "KEFJ",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "KOVA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "LACL",
+        "status": "no_data"
+      },
+      {
+        "park_code": "LAVO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "MACA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "MEVE",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "MORA",
+        "status": "matched"
+      },
+      {
+        "park_code": "NPSA",
+        "status": "no_data"
+      },
+      {
+        "park_code": "NERI",
+        "status": "matched"
+      },
+      {
+        "park_code": "NOCA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "OLYM",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "PEFO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "PINN",
+        "status": "matched"
+      },
+      {
+        "park_code": "REDW",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "ROMO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "SAGU",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "SEKI",
+        "status": "matched"
+      },
+      {
+        "park_code": "SHEN",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "THRO",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "VIIS",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "VOYA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "WHSA",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "WICA",
+        "status": "no_data"
+      },
+      {
+        "park_code": "WRST",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "YELL",
+        "status": "unconfirmed"
+      },
+      {
+        "park_code": "YOSE",
+        "status": "matched"
+      },
+      {
+        "park_code": "ZION",
+        "status": "matched"
+      }
+    ],
+    "matched_park_count": 10,
+    "activities": [
+      "Climbing"
+    ],
+    "historical_status": "live_supabase",
+    "years": null,
+    "analysis_years": [
+      2005,
+      2025
+    ],
+    "months": [
+      10
+    ],
+    "message": "Verified NPS activity matches. Showing up to three parks; unlisted activities remain unconfirmed. These are sourced options, not a claim that these are the only or best parks nationwide."
+  },
+  "browser_exact_question_verified": true,
+  "browser_interpretation": "Initial explicitly labeled fallback verified, then the exact question was re-tested successfully using a real GPT-6 Luna Standard API call.",
+  "new_live_llm_call_verified": true,
+  "original_failure_live_api_response_id": "resp_02936528dd79f6d6016b0445332cb087d281114616ff4b4bae",
+  "original_failure": "Live API interpretation returned unsupported; generic prose was application-rendered",
+  "database_writes": 0,
+  "schema_changes": 0,
+  "live_exact_question_receipt": {
+    "provider": "OpenAI",
+    "response_id": "resp_041594cc611481e6016b0447cfc65087d2bec61c8a4e272133",
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "requested_service_tier": "default",
+    "actual_service_tier": "default",
+    "input_tokens": 1243,
+    "output_tokens": 35,
+    "intent": "activities",
+    "verified_utc": "2026-11-23T14:04:01.233693+00:00",
+    "llm_role": "Structured request interpretation; factual answer text is application-rendered"
+  },
+  "live_exact_question_result_codes": [
+    "ARCH",
+    "BLCA",
+    "CANY"
+  ]
+}

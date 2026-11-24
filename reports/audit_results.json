@@ -1,0 +1,420 @@
+{
+  "generated_utc": "2026-11-19T14:58:47.574713+00:00",
+  "snapshot": {
+    "postgres_version": "17.11",
+    "transaction_read_only": "on",
+    "isolation": "repeatable read",
+    "snapshot_utc": "2026-11-19 14:58:40.038322+00:00"
+  },
+  "source": "live Supabase PostgreSQL",
+  "sql_hashes": {
+    "01_park_history.sql": "e2fd1aae9c17801eed69b6d8cd8d251787105abbc57364759967cee8e84426de",
+    "02_least_crowded.sql": "6802ebe55f1c6d0f3a3a51746b37a28fccdabf49bdbe0583f78ea69afaf49123",
+    "03_seasonal_visitation.sql": "2e2f5c9376b48257fbe156d6a2ab3ecf699e83c1617b9b74ef8e0ecc2fccbe1e",
+    "04_weather_climatology.sql": "962db162890d74c1847bdab4f07252ab9ea87a40e8dbfdd41e1c7a3a5fd744e7",
+    "05_suitability.sql": "5277b92b2be4e2b3aa3377cc594ef7a40f54faca1e68ddcc685ea4c6dc840cc5",
+    "06_coverage_gaps.sql": "3a74b4437f73cab1e00cf4b8b38f5fb9f308493a87321b46fb7f6763ed9853f8",
+    "07_annual_change.sql": "4985304b928ce03676c853ccfe45f89926541c01aab5c450eb3bf169a107afe8",
+    "08_seki_reconciliation.sql": "989272c0acc39c9756849556a213f0e2f300b339642f8051d7c40a505c7d1fbe"
+  },
+  "parameters": {
+    "start_year": 2005,
+    "end_year": 2025,
+    "minimum_years": 3,
+    "park_code": "ACAD",
+    "top_n": 3,
+    "temp_low": 15,
+    "temp_high": 24,
+    "weather_weight": 65,
+    "crowd_weight": 35
+  },
+  "row_counts": {
+    "parks": 63,
+    "visitation": 15863,
+    "weather": 15876
+  },
+  "joined_complete_rows": 15863,
+  "checks": [
+    {
+      "check": "parks: unique keys",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "parks: required values",
+      "status": "PASS",
+      "detail": {
+        "park_code": 0,
+        "park_name": 0,
+        "state": 0,
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    {
+      "check": "parks: longitude domain",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "parks: latitude domain",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "visitation: unique keys",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "visitation: required values",
+      "status": "PASS",
+      "detail": {
+        "park_code": 0,
+        "year": 0,
+        "month": 0,
+        "recreation_visits": 0
+      }
+    },
+    {
+      "check": "visitation: foreign keys",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "visitation: date domain",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "visitation: recreation_visits domain",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "weather: unique keys",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "weather: required values",
+      "status": "PASS",
+      "detail": {
+        "park_code": 0,
+        "year": 0,
+        "month": 0,
+        "avg_temp_c": 0,
+        "total_precip_mm": 0,
+        "total_snowfall_cm": 0
+      }
+    },
+    {
+      "check": "weather: foreign keys",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "weather: date domain",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "weather: total_snowfall_cm domain",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "weather: avg_temp_c domain",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "weather: total_precip_mm domain",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "Expected inventory",
+      "status": "PASS",
+      "detail": 63
+    },
+    {
+      "check": "Joined visitation cardinality",
+      "status": "PASS",
+      "detail": {
+        "complete_joined": 15863,
+        "visitation_rows": 15863,
+        "weather_rows": 15876
+      }
+    },
+    {
+      "check": "Complete weather grid",
+      "status": "PASS",
+      "detail": 15876
+    },
+    {
+      "check": "Complete visitation grid",
+      "status": "WARN",
+      "detail": [
+        {
+          "park_code": "CHIS",
+          "year": 2005,
+          "month": 12,
+          "missing_visitation": true,
+          "missing_weather": false
+        },
+        {
+          "park_code": "NPSA",
+          "year": 2005,
+          "month": 1,
+          "missing_visitation": true,
+          "missing_weather": false
+        },
+        {
+          "park_code": "NPSA",
+          "year": 2005,
+          "month": 2,
+          "missing_visitation": true,
+          "missing_weather": false
+        },
+        {
+          "park_code": "NPSA",
+          "year": 2005,
+          "month": 3,
+          "missing_visitation": true,
+          "missing_weather": false
+        },
+        {
+          "park_code": "NPSA",
+          "year": 2005,
+          "month": 4,
+          "missing_visitation": true,
+          "missing_weather": false
+        },
+        {
+          "park_code": "NPSA",
+          "year": 2005,
+          "month": 5,
+          "missing_visitation": true,
+          "missing_weather": false
+        },
+        {
+          "park_code": "NPSA",
+          "year": 2005,
+          "month": 6,
+          "missing_visitation": true,
+          "missing_weather": false
+        },
+        {
+          "park_code": "NPSA",
+          "year": 2005,
+          "month": 7,
+          "missing_visitation": true,
+          "missing_weather": false
+        },
+        {
+          "park_code": "NPSA",
+          "year": 2005,
+          "month": 8,
+          "missing_visitation": true,
+          "missing_weather": false
+        },
+        {
+          "park_code": "NPSA",
+          "year": 2005,
+          "month": 9,
+          "missing_visitation": true,
+          "missing_weather": false
+        },
+        {
+          "park_code": "NPSA",
+          "year": 2005,
+          "month": 10,
+          "missing_visitation": true,
+          "missing_weather": false
+        },
+        {
+          "park_code": "NPSA",
+          "year": 2005,
+          "month": 11,
+          "missing_visitation": true,
+          "missing_weather": false
+        },
+        {
+          "park_code": "NPSA",
+          "year": 2005,
+          "month": 12,
+          "missing_visitation": true,
+          "missing_weather": false
+        }
+      ]
+    },
+    {
+      "check": "Retained NPS direct-code reconciliation",
+      "status": "PASS",
+      "detail": {
+        "matched_rows": 15611,
+        "differences": 0
+      }
+    },
+    {
+      "check": "SEKI equals SEQU + KICA",
+      "status": "PASS",
+      "detail": {
+        "months": 252,
+        "mismatches": 0
+      }
+    },
+    {
+      "check": "Source-backed visitation gaps",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "SQL suitability equals application",
+      "status": "PASS",
+      "detail": {
+        "rows_compared": 756,
+        "mismatching_rows": 0
+      }
+    },
+    {
+      "check": "Suitability bounds",
+      "status": "PASS",
+      "detail": {
+        "scored_months": 756,
+        "min": 19.252480519480518,
+        "max": 96.79875000000001
+      }
+    },
+    {
+      "check": "Weather SQL means equal charts",
+      "status": "PASS",
+      "detail": {
+        "rows_compared": 756,
+        "mismatching_rows": 0
+      }
+    },
+    {
+      "check": "Least crowded SQL ranks independently reconciled",
+      "status": "PASS",
+      "detail": {
+        "rows_compared": 190,
+        "mismatching_rows": 0
+      }
+    },
+    {
+      "check": "Season totals reconcile to complete calendar years",
+      "status": "PASS",
+      "detail": {
+        "complete_park_years": 1321,
+        "season_rows": 5284
+      }
+    },
+    {
+      "check": "October discovery filter",
+      "status": "PASS",
+      "detail": {
+        "matching_parks": 7
+      }
+    },
+    {
+      "check": "ETL rerun idempotency",
+      "status": "PASS",
+      "detail": "270575187f4c2bebb45691f5a2569cc026cff611d09d5cf5fc4551d659c681fb"
+    },
+    {
+      "check": "Retained monthly weather matches live",
+      "status": "WARN",
+      "detail": [
+        {
+          "field": "avg_temp_c",
+          "overlap_rows": 4536,
+          "rows_different_above_1e_8": 3085,
+          "mean_absolute_difference": 0.007146932747617516,
+          "maximum_absolute_difference": 0.041935483870967794
+        },
+        {
+          "field": "total_precip_mm",
+          "overlap_rows": 4536,
+          "rows_different_above_1e_8": 464,
+          "mean_absolute_difference": 0.07052469135802482,
+          "maximum_absolute_difference": 13.400000000000006
+        },
+        {
+          "field": "total_snowfall_cm",
+          "overlap_rows": 4536,
+          "rows_different_above_1e_8": 206,
+          "mean_absolute_difference": 0.01387345679012348,
+          "maximum_absolute_difference": 2.380000000000024
+        }
+      ]
+    },
+    {
+      "check": "Annual change SQL independently reconciled",
+      "status": "PASS",
+      "detail": {
+        "rows_compared": 1321,
+        "mismatching_rows": 0
+      }
+    },
+    {
+      "check": "Representative daily weather reaggregation",
+      "status": "PASS",
+      "detail": {
+        "park_code": "ACAD",
+        "year": 2025,
+        "daily_rows": 365,
+        "monthly_rows": 12,
+        "raw_snapshot": "639127d3b0eb10720edb349a546c7af68bb8ac3cf1379f72344ea89182e6d336.json",
+        "all_months_matched": true,
+        "differences": {
+          "avg_temp_c": {
+            "maximum_absolute_difference": 5.3290705182007514e-14,
+            "months_different_above_1e_8": 0
+          },
+          "total_precip_mm": {
+            "maximum_absolute_difference": 0.0,
+            "months_different_above_1e_8": 0
+          },
+          "total_snowfall_cm": {
+            "maximum_absolute_difference": 0.0,
+            "months_different_above_1e_8": 0
+          }
+        },
+        "database_writes": 0,
+        "interpretation": "Fresh reanalysis may be revised since original ingestion. Original daily payloads are unavailable."
+      }
+    }
+  ],
+  "source_hashes": {
+    "National_Parks_r.R": "9814eaa5bbf7a3bdc7dc37b37b6314c88702b37d138440be32cba35f3910edcb",
+    "databasesproject_nationalparks.py": "b79c59f679fb401a7e98018f5cb82e4b059eeba178c41703d4704ecdee4c26e4",
+    "Query Builder for Public Use Statistics (1979 - Last Calendar Year).csv": "b2da962c8155feb641b04303179ed78ca4f3b7e6693c9ff8927b3f6453c2ea9c",
+    "national_parks_information.csv": "b852c742fbb74dd8ee75fc2fa4ec65781ef657e405c1b353b79140511af2f60c",
+    "national_parks_weather_2005_2025_partial.csv": "c2d0f0feb35d4499722da7c08fbfc9be26238f435549e67162b0fe615115a42e"
+  },
+  "database_writes": 0,
+  "schema_changes": 0,
+  "etl_change_plan": {
+    "parks": {
+      "new_rows": 0,
+      "unchanged_rows": 63,
+      "conflicting_existing_rows": 0,
+      "existing_only_rows": 0
+    },
+    "visitation": {
+      "new_rows": 0,
+      "unchanged_rows": 15863,
+      "conflicting_existing_rows": 0,
+      "existing_only_rows": 0
+    },
+    "weather": {
+      "new_rows": 0,
+      "unchanged_rows": 202,
+      "conflicting_existing_rows": 4334,
+      "existing_only_rows": 11340
+    }
+  },
+  "scope_note": "Daily source aggregation requires archived daily data; original raw responses were not retained."
+}

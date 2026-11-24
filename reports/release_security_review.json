@@ -1,0 +1,10 @@
+{
+  "verified_utc": "2026-11-23T05:13:43.731404+00:00",
+  "working_files_scanned": 264,
+  "historical_blobs_scanned": 466,
+  "known_credentials_and_api_pattern_findings": [],
+  "application_code_unchanged_during_release": true,
+  "database_writes": 0,
+  "publication": "Private publication approved by owner; not pushed because authenticated GitHub access is unavailable in this chat.",
+  "scan_scope": "Known active connection URI/password, OpenAI/Supabase secret patterns, configuration filenames, archive XML/text, all reachable Git history blobs. Pattern scanning cannot guarantee absence of every possible secret format."
+}

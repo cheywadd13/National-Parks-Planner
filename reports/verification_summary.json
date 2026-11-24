@@ -1,0 +1,28 @@
+{
+  "verified_utc": "2026-11-19T15:01:33.426888+00:00",
+  "automated_tests": 19,
+  "result": "PASS",
+  "live_database_tests_included": true,
+  "audit_check_counts": {
+    "PASS": 31,
+    "WARN": 2
+  },
+  "warnings": [
+    "13 source-aligned visitation gaps",
+    "Older partial monthly weather export differs from live data"
+  ],
+  "pdf_visual_qa": {
+    "project_report_pages": 7,
+    "data_quality_report_pages": 2,
+    "result": "PASS"
+  },
+  "source_files_unchanged": true,
+  "database_writes": 0,
+  "schema_changes": 0,
+  "test_source_hashes": {
+    "tests\\test_app.py": "dcf612b6ed1aba4475c51ef0620df6d4a5403bcdfb31714198d53e91d6fb8920",
+    "tests\\test_database_evidence.py": "38e49c0b88b13889db3e23886f249826c2453bf84a48da094b15175e894b0ffa",
+    "tests\\test_etl.py": "34d93f362accfef0e7dbc58aecbfd2e9ceaa7a970f79aa08937d20a1efd79c27",
+    "tests\\test_phase1.py": "545a286289d777cba5a671ead3bb51957ddde5d665db3c88d5470a464afc8c12"
+  }
+}

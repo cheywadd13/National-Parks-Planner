@@ -1,0 +1,128 @@
+{
+  "database_writes": 0,
+  "source": "Live Supabase read-only",
+  "weather_months": 15876,
+  "visitation_months": 15863,
+  "query_parity": "PASS",
+  "october_quiet_top3": [
+    {
+      "park_code": "GAAR",
+      "park_name": "Gates Of The Arctic National Park & Preserve",
+      "month": 10,
+      "years": 21,
+      "avg_temp_c": -10.53,
+      "total_precip_mm": 28.4,
+      "total_snowfall_cm": 20.09,
+      "recreation_visits": 0.0,
+      "crowd_percentile": 4.55,
+      "weather_score": 31.43,
+      "crowd_score": 95.45,
+      "score": 53.84
+    },
+    {
+      "park_code": "KATM",
+      "park_name": "Katmai National Park & Preserve",
+      "month": 10,
+      "years": 21,
+      "avg_temp_c": 1.97,
+      "total_precip_mm": 166.5,
+      "total_snowfall_cm": 5.39,
+      "recreation_visits": 100.0,
+      "crowd_percentile": 59.09,
+      "weather_score": 46.58,
+      "crowd_score": 40.91,
+      "score": 44.59
+    },
+    {
+      "park_code": "ISRO",
+      "park_name": "Isle Royale National Park",
+      "month": 10,
+      "years": 21,
+      "avg_temp_c": 9.37,
+      "total_precip_mm": 85.4,
+      "total_snowfall_cm": 0.21,
+      "recreation_visits": 217.0,
+      "crowd_percentile": 54.55,
+      "weather_score": 75.76,
+      "crowd_score": 45.45,
+      "score": 65.15
+    }
+  ],
+  "yellowstone_findings": [
+    "Highest observed calendar-month mean: July (896,346 recreation visits).",
+    "Lowest observed calendar-month mean: November (16,475 recreation visits).",
+    "These are park-wide recreation visits, not unique visitors or individual trail traffic."
+  ],
+  "yellowstone_diagnostics": [
+    {
+      "metric": "avg_temp_c",
+      "observed": 252,
+      "missing": 0,
+      "screened": 252,
+      "flagged": 7,
+      "mean_all": 0.6383414331620678,
+      "mean_without_flags": 0.7038081995868426,
+      "median_all": -0.8566666666666665
+    },
+    {
+      "metric": "total_precip_mm",
+      "observed": 252,
+      "missing": 0,
+      "screened": 252,
+      "flagged": 6,
+      "mean_all": 59.962698412698415,
+      "mean_without_flags": 58.130487804878044,
+      "median_all": 57.4
+    },
+    {
+      "metric": "total_snowfall_cm",
+      "observed": 252,
+      "missing": 0,
+      "screened": 210,
+      "flagged": 8,
+      "mean_all": 30.487222222222222,
+      "mean_without_flags": 29.290409836065574,
+      "median_all": 26.810000000000002
+    },
+    {
+      "metric": "recreation_visits",
+      "observed": 252,
+      "missing": 0,
+      "screened": 252,
+      "flagged": 3,
+      "mean_all": 313392.94444444444,
+      "mean_without_flags": 314441.8674698795,
+      "median_all": 75156.5
+    }
+  ],
+  "yellowstone_correlations": [
+    {
+      "metric": "avg_temp_c",
+      "paired_months": 252,
+      "spearman": 0.8550321310339695,
+      "anomaly_pairs": 252,
+      "anomaly_spearman": 0.07372206519715785
+    },
+    {
+      "metric": "total_precip_mm",
+      "paired_months": 252,
+      "spearman": -0.37545594824457307,
+      "anomaly_pairs": 252,
+      "anomaly_spearman": -0.07580787394963866
+    },
+    {
+      "metric": "total_snowfall_cm",
+      "paired_months": 252,
+      "spearman": -0.7948328146033401,
+      "anomaly_pairs": 252,
+      "anomaly_spearman": -0.18037649615364848
+    }
+  ],
+  "live_llm": "NOT RUN: API key not configured",
+  "existing_live_tests": {
+    "run": 2,
+    "failures": 0,
+    "errors": 0
+  },
+  "verified_utc": "2026-11-21T18:53:26.122577+00:00"
+}

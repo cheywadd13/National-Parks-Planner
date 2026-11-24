@@ -1,0 +1,33 @@
+{
+  "database_writes": 0,
+  "outputs": {
+    "parks_supabase.csv": "0f6b1a90266761fd0acbb7e8dd6f3dbdc3207c1a0cae650548b7387ed120669a",
+    "visitation_supabase.csv": "d3b99991bf8670a37db0b1b4decac21395a604d787af0637026890a8ccef54a7",
+    "weather_supabase.csv": "de07a90fd83bee6ea5fe2d49832f0a72a2f89772e30a4970554f65736e57cf13"
+  },
+  "rows": {
+    "parks": 63,
+    "visitation": 15863,
+    "weather": 4536
+  },
+  "run_id": "270575187f4c2bebb45691f5a2569cc026cff611d09d5cf5fc4551d659c681fb",
+  "seki": "SEQU + KICA visitation; weather retained at one point",
+  "source_files": {
+    "metadata": {
+      "archived_file": "b852c742fbb74dd8ee75fc2fa4ec65781ef657e405c1b353b79140511af2f60c.csv",
+      "filename": "national_parks_information.csv",
+      "sha256": "b852c742fbb74dd8ee75fc2fa4ec65781ef657e405c1b353b79140511af2f60c"
+    },
+    "visitation": {
+      "archived_file": "b2da962c8155feb641b04303179ed78ca4f3b7e6693c9ff8927b3f6453c2ea9c.csv",
+      "filename": "Query Builder for Public Use Statistics (1979 - Last Calendar Year).csv",
+      "sha256": "b2da962c8155feb641b04303179ed78ca4f3b7e6693c9ff8927b3f6453c2ea9c"
+    },
+    "weather": {
+      "archived_file": "c2d0f0feb35d4499722da7c08fbfc9be26238f435549e67162b0fe615115a42e.csv",
+      "filename": "national_parks_weather_2005_2025_partial.csv",
+      "sha256": "c2d0f0feb35d4499722da7c08fbfc9be26238f435549e67162b0fe615115a42e"
+    }
+  },
+  "transformation_version": 2
+}

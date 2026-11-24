@@ -1,0 +1,24 @@
+erDiagram
+    PARKS ||--o{ VISITATION : records
+    PARKS ||--o{ WEATHER : models
+    PARKS {
+        varchar park_code PK
+        text park_name
+        varchar state "comma-separated memberships"
+        float8 latitude
+        float8 longitude
+    }
+    VISITATION {
+        varchar park_code PK,FK
+        int year PK
+        int month PK
+        int recreation_visits
+    }
+    WEATHER {
+        varchar park_code PK,FK
+        int year PK
+        int month PK
+        float8 avg_temp_c
+        float8 total_precip_mm
+        float8 total_snowfall_cm
+    }

@@ -1,0 +1,11 @@
+{
+  "verified_utc": "2026-11-24T17:22:37.248858+00:00",
+  "working_files_scanned": 274,
+  "historical_blobs_scanned": 476,
+  "known_credentials_and_api_pattern_findings": [],
+  "application_code_unchanged_since_nov22_baseline": false,
+  "expected_feature_changes": "Assistant conversation, evidence retrieval and key retention updated with tests",
+  "database_writes": 0,
+  "publication": "Private publication approved; target cheywadd13/National-Parks-Planner verified private",
+  "scan_scope": "Known active connection URI/password, OpenAI/Supabase secret patterns, configuration filenames, archive XML/text, all reachable Git history blobs. Pattern scanning cannot guarantee absence of every possible secret format."
+}

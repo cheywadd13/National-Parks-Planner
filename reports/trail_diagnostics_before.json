@@ -1,0 +1,933 @@
+{
+  "checked_utc": "2026-11-23T04:03:38.397273+00:00",
+  "database_writes": 0,
+  "public_tables": [
+    "course",
+    "customer",
+    "dealer",
+    "electric_vehicle",
+    "enrollment",
+    "jsonb_vehicles",
+    "listing",
+    "option",
+    "parks",
+    "prerequisite",
+    "seat",
+    "section",
+    "show",
+    "show_price",
+    "student",
+    "ticket",
+    "vehicle",
+    "vehicle_option",
+    "venue",
+    "visitation",
+    "weather"
+  ],
+  "trail_tables": [],
+  "foreign_keys": [
+    [
+      "listing",
+      "listing_dealer_id_fkey",
+      "dealer_id",
+      "dealer",
+      "dealer_id"
+    ],
+    [
+      "vehicle_option",
+      "vehicle_option_vehicle_id_fkey",
+      "vehicle_id",
+      "vehicle",
+      "vehicle_id"
+    ],
+    [
+      "vehicle_option",
+      "vehicle_option_option_id_fkey",
+      "option_id",
+      "option",
+      "option_id"
+    ],
+    [
+      "electric_vehicle",
+      "electric_vehicle_vehicle_id_fkey",
+      "vehicle_id",
+      "vehicle",
+      "vehicle_id"
+    ],
+    [
+      "prerequisite",
+      "prerequisite_course_id_fkey",
+      "course_id",
+      "course",
+      "course_id"
+    ],
+    [
+      "prerequisite",
+      "prerequisite_prereq_id_fkey",
+      "prereq_id",
+      "course",
+      "course_id"
+    ],
+    [
+      "section",
+      "section_course_id_fkey",
+      "course_id",
+      "course",
+      "course_id"
+    ],
+    [
+      "enrollment",
+      "enrollment_student_id_fkey",
+      "student_id",
+      "student",
+      "student_id"
+    ],
+    [
+      "enrollment",
+      "enrollment_course_id_term_section_no_fkey",
+      "course_id",
+      "section",
+      "course_id"
+    ],
+    [
+      "enrollment",
+      "enrollment_course_id_term_section_no_fkey",
+      "course_id",
+      "section",
+      "section_no"
+    ],
+    [
+      "enrollment",
+      "enrollment_course_id_term_section_no_fkey",
+      "course_id",
+      "section",
+      "term"
+    ],
+    [
+      "enrollment",
+      "enrollment_course_id_term_section_no_fkey",
+      "term",
+      "section",
+      "course_id"
+    ],
+    [
+      "enrollment",
+      "enrollment_course_id_term_section_no_fkey",
+      "term",
+      "section",
+      "section_no"
+    ],
+    [
+      "enrollment",
+      "enrollment_course_id_term_section_no_fkey",
+      "term",
+      "section",
+      "term"
+    ],
+    [
+      "enrollment",
+      "enrollment_course_id_term_section_no_fkey",
+      "section_no",
+      "section",
+      "course_id"
+    ],
+    [
+      "enrollment",
+      "enrollment_course_id_term_section_no_fkey",
+      "section_no",
+      "section",
+      "section_no"
+    ],
+    [
+      "enrollment",
+      "enrollment_course_id_term_section_no_fkey",
+      "section_no",
+      "section",
+      "term"
+    ],
+    [
+      "seat",
+      "seat_venue_id_fkey",
+      "venue_id",
+      "venue",
+      "venue_id"
+    ],
+    [
+      "show",
+      "show_venue_id_fkey",
+      "venue_id",
+      "venue",
+      "venue_id"
+    ],
+    [
+      "show_price",
+      "show_price_show_id_fkey",
+      "show_id",
+      "show",
+      "show_id"
+    ],
+    [
+      "ticket",
+      "ticket_show_id_fkey",
+      "show_id",
+      "show",
+      "show_id"
+    ],
+    [
+      "ticket",
+      "ticket_customer_id_fkey",
+      "customer_id",
+      "customer",
+      "customer_id"
+    ],
+    [
+      "ticket",
+      "ticket_venue_id_row_letter_seat_no_fkey",
+      "venue_id",
+      "seat",
+      "row_letter"
+    ],
+    [
+      "ticket",
+      "ticket_venue_id_row_letter_seat_no_fkey",
+      "venue_id",
+      "seat",
+      "seat_no"
+    ],
+    [
+      "ticket",
+      "ticket_venue_id_row_letter_seat_no_fkey",
+      "venue_id",
+      "seat",
+      "venue_id"
+    ],
+    [
+      "ticket",
+      "ticket_venue_id_row_letter_seat_no_fkey",
+      "row_letter",
+      "seat",
+      "row_letter"
+    ],
+    [
+      "ticket",
+      "ticket_venue_id_row_letter_seat_no_fkey",
+      "row_letter",
+      "seat",
+      "seat_no"
+    ],
+    [
+      "ticket",
+      "ticket_venue_id_row_letter_seat_no_fkey",
+      "row_letter",
+      "seat",
+      "venue_id"
+    ],
+    [
+      "ticket",
+      "ticket_venue_id_row_letter_seat_no_fkey",
+      "seat_no",
+      "seat",
+      "row_letter"
+    ],
+    [
+      "ticket",
+      "ticket_venue_id_row_letter_seat_no_fkey",
+      "seat_no",
+      "seat",
+      "seat_no"
+    ],
+    [
+      "ticket",
+      "ticket_venue_id_row_letter_seat_no_fkey",
+      "seat_no",
+      "seat",
+      "venue_id"
+    ],
+    [
+      "visitation",
+      "visitation_park_code_fkey",
+      "park_code",
+      "parks",
+      "park_code"
+    ],
+    [
+      "weather",
+      "weather_park_code_fkey",
+      "park_code",
+      "parks",
+      "park_code"
+    ]
+  ],
+  "catalog_source": "data/trails.json (reviewed official NPS snapshots; not a Supabase table)",
+  "catalog_records": 16,
+  "catalog_park_codes": [
+    "ACAD",
+    "ARCH",
+    "GRCA",
+    "YELL",
+    "YOSE",
+    "ZION"
+  ],
+  "orphan_catalog_codes": [],
+  "duplicate_trail_ids": 0,
+  "coverage": [
+    {
+      "park_code": "ACAD",
+      "park_name": "Acadia National Park",
+      "catalog_trails": 3,
+      "source_difficulty_labels": {
+        "Not reported": 3
+      },
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "ARCH",
+      "park_name": "Arches National Park",
+      "catalog_trails": 2,
+      "source_difficulty_labels": {
+        "Strenuous": 1,
+        "Easy": 1
+      },
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "BADL",
+      "park_name": "Badlands National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "BIBE",
+      "park_name": "Big Bend National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "BISC",
+      "park_name": "Biscayne National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "BLCA",
+      "park_name": "Black Canyon Of The Gunnison National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "BRCA",
+      "park_name": "Bryce Canyon National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "CANY",
+      "park_name": "Canyonlands National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "CARE",
+      "park_name": "Capitol Reef National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "CAVE",
+      "park_name": "Carlsbad Caverns National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "CHIR",
+      "park_name": "Chiricahua National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "CHIS",
+      "park_name": "Channel Islands National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "CONG",
+      "park_name": "Congaree National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "CRLA",
+      "park_name": "Crater Lake National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "CUVA",
+      "park_name": "Cuyahoga Valley National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "DENA",
+      "park_name": "Denali National Park & Preserve",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "DEVA",
+      "park_name": "Death Valley National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "DRTO",
+      "park_name": "Dry Tortugas National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "EVER",
+      "park_name": "Everglades National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "GAAR",
+      "park_name": "Gates Of The Arctic National Park & Preserve",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "GLAC",
+      "park_name": "Glacier National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "GLBA",
+      "park_name": "Glacier Bay National Park & Preserve",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "GRBA",
+      "park_name": "Great Basin National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "GRCA",
+      "park_name": "Grand Canyon National Park",
+      "catalog_trails": 1,
+      "source_difficulty_labels": {
+        "Not reported": 1
+      },
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "GRSA",
+      "park_name": "Great Sand Dunes National Park & Preserve",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "GRSM",
+      "park_name": "Great Smoky Mountains National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "GRTE",
+      "park_name": "Grand Teton National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "GUMO",
+      "park_name": "Guadalupe Mountains National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "HALE",
+      "park_name": "Haleakal\u0101 National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "HAVO",
+      "park_name": "Hawai\u02bbi Volcanoes National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "HOSP",
+      "park_name": "Hot Springs National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "INDU",
+      "park_name": "Indiana Dunes National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "ISRO",
+      "park_name": "Isle Royale National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "JEFF",
+      "park_name": "Gateway Arch National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "JOTR",
+      "park_name": "Joshua Tree National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "KATM",
+      "park_name": "Katmai National Park & Preserve",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "KEFJ",
+      "park_name": "Kenai Fjords National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "KOVA",
+      "park_name": "Kobuk Valley National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "LACL",
+      "park_name": "Lake Clark National Park & Preserve",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "LAVO",
+      "park_name": "Lassen Volcanic National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "MACA",
+      "park_name": "Mammoth Cave National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "MEVE",
+      "park_name": "Mesa Verde National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "MORA",
+      "park_name": "Mount Rainier National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "NERI",
+      "park_name": "New River Gorge National Park & Preserve",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "NOCA",
+      "park_name": "North Cascades National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "NPSA",
+      "park_name": "National Park of American Samoa",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "OLYM",
+      "park_name": "Olympic National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "PEFO",
+      "park_name": "Petrified Forest National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "PINN",
+      "park_name": "Pinnacles National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "REDW",
+      "park_name": "Redwood National and State Parks",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "ROMO",
+      "park_name": "Rocky Mountain National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "SAGU",
+      "park_name": "Saguaro National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "SEKI",
+      "park_name": "Sequoia & Kings Canyon National Parks",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "SHEN",
+      "park_name": "Shenandoah National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "THRO",
+      "park_name": "Theodore Roosevelt National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "VIIS",
+      "park_name": "Virgin Islands National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "VOYA",
+      "park_name": "Voyageurs National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "WHSA",
+      "park_name": "White Sands National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "WICA",
+      "park_name": "Wind Cave National Park",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "WRST",
+      "park_name": "Wrangell - St Elias National Park & Preserve",
+      "catalog_trails": 0,
+      "source_difficulty_labels": {},
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "YELL",
+      "park_name": "Yellowstone National Park",
+      "catalog_trails": 2,
+      "source_difficulty_labels": {
+        "Easy": 2
+      },
+      "moderate_exact_matches": 0
+    },
+    {
+      "park_code": "YOSE",
+      "park_name": "Yosemite National Park",
+      "catalog_trails": 6,
+      "source_difficulty_labels": {
+        "Moderate": 1,
+        "Strenuous": 2,
+        "Easy": 1,
+        "Easy to Moderate": 2
+      },
+      "moderate_exact_matches": 1
+    },
+    {
+      "park_code": "ZION",
+      "park_name": "Zion National Park",
+      "catalog_trails": 2,
+      "source_difficulty_labels": {
+        "Easy": 1,
+        "Not reported": 1
+      },
+      "moderate_exact_matches": 0
+    }
+  ],
+  "historical_readonly_query_checks": [
+    {
+      "intent": "quiet_parks",
+      "park_codes": [],
+      "months": [
+        10
+      ],
+      "parity": "PASS",
+      "results": [
+        {
+          "park_code": "GAAR",
+          "park_name": "Gates Of The Arctic National Park & Preserve",
+          "month": 10,
+          "years": 21,
+          "avg_temp_c": -10.53,
+          "total_precip_mm": 28.4,
+          "total_snowfall_cm": 20.09,
+          "recreation_visits": 0.0,
+          "crowd_percentile": 4.55,
+          "weather_score": 31.43,
+          "crowd_score": 95.45,
+          "score": 53.84
+        },
+        {
+          "park_code": "KATM",
+          "park_name": "Katmai National Park & Preserve",
+          "month": 10,
+          "years": 21,
+          "avg_temp_c": 1.97,
+          "total_precip_mm": 166.5,
+          "total_snowfall_cm": 5.39,
+          "recreation_visits": 100.0,
+          "crowd_percentile": 59.09,
+          "weather_score": 46.58,
+          "crowd_score": 40.91,
+          "score": 44.59
+        },
+        {
+          "park_code": "ISRO",
+          "park_name": "Isle Royale National Park",
+          "month": 10,
+          "years": 21,
+          "avg_temp_c": 9.37,
+          "total_precip_mm": 85.4,
+          "total_snowfall_cm": 0.21,
+          "recreation_visits": 217.0,
+          "crowd_percentile": 54.55,
+          "weather_score": 75.76,
+          "crowd_score": 45.45,
+          "score": 65.15
+        }
+      ]
+    },
+    {
+      "intent": "mild_weather",
+      "park_codes": [],
+      "months": [
+        3
+      ],
+      "parity": "PASS",
+      "results": [
+        {
+          "park_code": "JOTR",
+          "park_name": "Joshua Tree National Park",
+          "month": 3,
+          "years": 21,
+          "avg_temp_c": 16.66,
+          "total_precip_mm": 4.4,
+          "total_snowfall_cm": 0.0,
+          "recreation_visits": 260407.0,
+          "crowd_percentile": 100.0,
+          "weather_score": 99.45,
+          "crowd_score": 0.0,
+          "score": 64.64
+        },
+        {
+          "park_code": "BIBE",
+          "park_name": "Big Bend National Park",
+          "month": 3,
+          "years": 21,
+          "avg_temp_c": 15.82,
+          "total_precip_mm": 7.2,
+          "total_snowfall_cm": 0.0,
+          "recreation_visits": 66156.0,
+          "crowd_percentile": 100.0,
+          "weather_score": 99.1,
+          "crowd_score": 0.0,
+          "score": 64.41
+        },
+        {
+          "park_code": "DRTO",
+          "park_name": "Dry Tortugas National Park",
+          "month": 3,
+          "years": 21,
+          "avg_temp_c": 22.27,
+          "total_precip_mm": 9.7,
+          "total_snowfall_cm": 0.0,
+          "recreation_visits": 7167.0,
+          "crowd_percentile": 90.91,
+          "weather_score": 98.79,
+          "crowd_score": 9.09,
+          "score": 67.39
+        }
+      ]
+    },
+    {
+      "intent": "compare_months",
+      "park_codes": [
+        "YELL"
+      ],
+      "months": [
+        7,
+        9
+      ],
+      "parity": "PASS",
+      "results": [
+        {
+          "park_code": "YELL",
+          "park_name": "Yellowstone National Park",
+          "month": 7,
+          "years": 21,
+          "avg_temp_c": 14.97,
+          "total_precip_mm": 26.7,
+          "total_snowfall_cm": 0.0,
+          "recreation_visits": 936062.0,
+          "crowd_percentile": 100.0,
+          "weather_score": 96.59,
+          "crowd_score": 0.0,
+          "score": 62.79
+        },
+        {
+          "park_code": "YELL",
+          "park_name": "Yellowstone National Park",
+          "month": 9,
+          "years": 21,
+          "avg_temp_c": 9.13,
+          "total_precip_mm": 48.1,
+          "total_snowfall_cm": 6.79,
+          "recreation_visits": 571764.0,
+          "crowd_percentile": 72.73,
+          "weather_score": 78.21,
+          "crowd_score": 27.27,
+          "score": 60.38
+        }
+      ]
+    },
+    {
+      "intent": "best_months",
+      "park_codes": [
+        "OLYM"
+      ],
+      "months": [],
+      "parity": "PASS",
+      "results": [
+        {
+          "park_code": "OLYM",
+          "park_name": "Olympic National Park",
+          "month": 7,
+          "years": 21,
+          "avg_temp_c": 12.24,
+          "total_precip_mm": 29.6,
+          "total_snowfall_cm": 0.0,
+          "recreation_visits": 511702.0,
+          "crowd_percentile": 90.91,
+          "weather_score": 89.67,
+          "crowd_score": 9.09,
+          "score": 61.47
+        },
+        {
+          "park_code": "OLYM",
+          "park_name": "Olympic National Park",
+          "month": 8,
+          "years": 21,
+          "avg_temp_c": 12.32,
+          "total_precip_mm": 30.7,
+          "total_snowfall_cm": 0.0,
+          "recreation_visits": 714948.0,
+          "crowd_percentile": 100.0,
+          "weather_score": 89.72,
+          "crowd_score": 0.0,
+          "score": 58.32
+        },
+        {
+          "park_code": "OLYM",
+          "park_name": "Olympic National Park",
+          "month": 6,
+          "years": 21,
+          "avg_temp_c": 7.22,
+          "total_precip_mm": 85.5,
+          "total_snowfall_cm": 0.0,
+          "recreation_visits": 377950.0,
+          "crowd_percentile": 72.73,
+          "weather_score": 70.64,
+          "crowd_score": 27.27,
+          "score": 55.46
+        }
+      ]
+    }
+  ],
+  "live_openai_call": "Not tested by this read-only database diagnostic; requires separate provider evidence"
+}

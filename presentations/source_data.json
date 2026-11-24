@@ -1,0 +1,373 @@
+{
+  "photos": [
+    {
+      "url": "https://www.nps.gov/common/uploads/structured_data/2815637A-9869-FC9C-99461D0B36AA1922.jpg?maxWidth=1200&maxHeight=800&quality=90",
+      "credit": "NPS / Jacob W. Frank",
+      "caption": "The sun sets behind Electric Peak.",
+      "alt": "The sun sets behind the sharp point of a snow-covered mountain; pink clouds are reflected in a pond",
+      "source_url": "https://www.nps.gov/yell/index.htm",
+      "rights_basis": "NPS-authored credit and NPS public-domain policy",
+      "rights_url": "https://www.nps.gov/aboutus/disclaimer.htm",
+      "park_code": "YELL"
+    },
+    {
+      "url": "https://www.nps.gov/common/uploads/structured_data/68BFC1AC-BF96-629F-89D261D78F181C64.jpg?maxWidth=1200&maxHeight=800&quality=90",
+      "credit": "NPS Photo / Shane Carte",
+      "caption": "The Watchman greets visitors to Zion Canyon as it towers over the visitor center and South Entrance.",
+      "alt": "A triangular sandstone mountain overlooks green and yellow foliage. A cloudy blue sky is overhead.",
+      "source_url": "https://www.nps.gov/zion/index.htm",
+      "rights_basis": "NPS-authored credit and NPS public-domain policy",
+      "rights_url": "https://www.nps.gov/aboutus/disclaimer.htm",
+      "park_code": "ZION"
+    },
+    {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79931C-1DD8-B71B-0BF201E3DB540D04.jpg?maxWidth=1200&maxHeight=800&quality=90",
+      "credit": "NPS Photo",
+      "caption": "Double O Arch is one of many large arches in the Devils Garden area",
+      "alt": "a broad, red arch with rock pinnacles in the background",
+      "source_url": "https://www.nps.gov/arch/index.htm",
+      "rights_basis": "NPS-authored credit and NPS public-domain policy",
+      "rights_url": "https://www.nps.gov/aboutus/disclaimer.htm",
+      "park_code": "ARCH"
+    }
+  ],
+  "yellowstone_monthly": [
+    {
+      "month": 1,
+      "month_name": "Jan",
+      "recreation_visits": 30335.95238095238,
+      "avg_temp_c": -10.449769585253446
+    },
+    {
+      "month": 2,
+      "month_name": "Feb",
+      "recreation_visits": 34726.90476190476,
+      "avg_temp_c": -9.233374384236452
+    },
+    {
+      "month": 3,
+      "month_name": "Mar",
+      "recreation_visits": 24354.428571428572,
+      "avg_temp_c": -5.273732718894009
+    },
+    {
+      "month": 4,
+      "month_name": "Apr",
+      "recreation_visits": 42036.52380952381,
+      "avg_temp_c": -2.088253968253969
+    },
+    {
+      "month": 5,
+      "month_name": "May",
+      "recreation_visits": 345174.5714285714,
+      "avg_temp_c": 2.4835637480798765
+    },
+    {
+      "month": 6,
+      "month_name": "Jun",
+      "recreation_visits": 714416.5238095238,
+      "avg_temp_c": 8.721904761904764
+    },
+    {
+      "month": 7,
+      "month_name": "Jul",
+      "recreation_visits": 896346.0952380953,
+      "avg_temp_c": 15.055299539170505
+    },
+    {
+      "month": 8,
+      "month_name": "Aug",
+      "recreation_visits": 792601.1428571428,
+      "avg_temp_c": 14.056528417818738
+    },
+    {
+      "month": 9,
+      "month_name": "Sep",
+      "recreation_visits": 629225.0,
+      "avg_temp_c": 9.30730158730159
+    },
+    {
+      "month": 10,
+      "month_name": "Oct",
+      "recreation_visits": 211925.33333333334,
+      "avg_temp_c": 1.0422427035330253
+    },
+    {
+      "month": 11,
+      "month_name": "Nov",
+      "recreation_visits": 16474.714285714286,
+      "avg_temp_c": -5.652857142857142
+    },
+    {
+      "month": 12,
+      "month_name": "Dec",
+      "recreation_visits": 23098.14285714286,
+      "avg_temp_c": -10.308755760368665
+    }
+  ],
+  "yellowstone_associations": [
+    {
+      "metric": "avg_temp_c",
+      "paired_months": 252,
+      "spearman": 0.8550321310339695,
+      "anomaly_pairs": 252,
+      "anomaly_spearman": 0.07372206519715785
+    },
+    {
+      "metric": "total_precip_mm",
+      "paired_months": 252,
+      "spearman": -0.37545594824457307,
+      "anomaly_pairs": 252,
+      "anomaly_spearman": -0.07580787394963866
+    },
+    {
+      "metric": "total_snowfall_cm",
+      "paired_months": 252,
+      "spearman": -0.7948328146033401,
+      "anomaly_pairs": 252,
+      "anomaly_spearman": -0.18037649615364848
+    }
+  ],
+  "yellowstone_diagnostics": [
+    {
+      "metric": "avg_temp_c",
+      "observed": 252,
+      "missing": 0,
+      "screened": 252,
+      "flagged": 7,
+      "mean_all": 0.6383414331620678,
+      "mean_without_flags": 0.7038081995868426,
+      "median_all": -0.8566666666666665
+    },
+    {
+      "metric": "total_precip_mm",
+      "observed": 252,
+      "missing": 0,
+      "screened": 252,
+      "flagged": 6,
+      "mean_all": 59.962698412698415,
+      "mean_without_flags": 58.130487804878044,
+      "median_all": 57.4
+    },
+    {
+      "metric": "total_snowfall_cm",
+      "observed": 252,
+      "missing": 0,
+      "screened": 210,
+      "flagged": 8,
+      "mean_all": 30.487222222222222,
+      "mean_without_flags": 29.290409836065574,
+      "median_all": 26.810000000000002
+    },
+    {
+      "metric": "recreation_visits",
+      "observed": 252,
+      "missing": 0,
+      "screened": 252,
+      "flagged": 3,
+      "mean_all": 313392.94444444444,
+      "mean_without_flags": 314441.8674698795,
+      "median_all": 75156.5
+    }
+  ],
+  "parks": 63,
+  "weather_months": 15876,
+  "visitation_months": 15863,
+  "api": {
+    "verification_basis": "Retained live conversation evidence panels plus a new observed live Badlands comparison. Provider-returned usage comes from the application HTTPS Responses request, not model-generated text. Prior release did not retain response IDs. Corrected combined request subsequently confirmed by the user and by a durable provider receipt.",
+    "observed_calls": [
+      {
+        "intent": "compare_months",
+        "input_tokens": 1028,
+        "output_tokens": 37,
+        "model": "gpt-6-luna",
+        "service_tier": "default"
+      }
+    ],
+    "live_call_observed": true,
+    "weather_answer_without_trails_verified": true,
+    "credentials_recorded": false,
+    "remaining": "Catalog coverage remains incomplete; current NPS alerts need their separate API key.",
+    "corrected_combined_question_verified": true,
+    "latest_provider_receipt": {
+      "provider": "OpenAI",
+      "response_id": "resp_091180e458086bf9016b03c1a4809087d2a01e3be52edc4527",
+      "model": "gpt-6-luna",
+      "status": "completed",
+      "requested_service_tier": "default",
+      "actual_service_tier": "default",
+      "input_tokens": 1086,
+      "output_tokens": 37,
+      "intent": "visit_and_hikes",
+      "verified_utc": "2026-11-23T04:31:33.553503+00:00",
+      "llm_role": "Structured request interpretation; factual answer text is application-rendered"
+    },
+    "user_confirmed_corrected_zion_question_worked": true
+  },
+  "zion": {
+    "kind": "visit_and_hikes",
+    "message": "Historical visit timing and verified trails are evaluated independently.",
+    "rows": [
+      {
+        "park_code": "ZION",
+        "park_name": "Zion National Park",
+        "month": 10,
+        "years": 21,
+        "rank": 1,
+        "eligible_months": 12,
+        "avg_temp_c": 11.44,
+        "total_precip_mm": 20.6,
+        "total_snowfall_cm": 0.0,
+        "recreation_visits": 314966.0,
+        "crowd_percentile": 45.45,
+        "weather_score": 88.89,
+        "crowd_score": 54.55,
+        "score": 76.87
+      },
+      {
+        "trail_id": "ZION-watchman",
+        "park_code": "ZION",
+        "name": "Watchman Trail",
+        "source_url": "https://www.nps.gov/thingstodo/hike-watchman-trail.htm",
+        "distance_miles": 3.3,
+        "distance_basis": "round trip",
+        "difficulty": "Moderate",
+        "elevation_ft": null,
+        "elevation_kind": "Full-route elevation gain",
+        "duration": "1\u20132 hours",
+        "trailhead": "Zion Canyon Visitor Center: follow the plaza sidewalk past the shuttle stop to the crosswalk, then follow the river to the trail.",
+        "description": "Climb from the river to an overlook of the Watchman, lower Zion Canyon, sandstone towers and Springdale.",
+        "season_note": "NPS lists year-round use, with potential muddy or icy conditions in winter and monsoon season and limited summer shade. This is general guidance, not a current condition report.",
+        "restrictions": "NPS prohibits bikes and pets. The route has sandy, rocky, uneven surfaces and drop-offs.",
+        "measurement_note": "The 3.3-mile distance describes the published round trip. NPS accessibility data gives separate overlook and loop segments; a full-route total elevation gain is not reported and is not inferred by summing segments.",
+        "permit_note": "NPS lists no reservations, but this does not establish all permit or current access requirements. Park entrance fees apply; check official guidance.",
+        "checked_at": "2026-11-23T04:07:45.505477+00:00",
+        "sha256": "59d62c2cd9a0683a7084d0ffccf0b8101870a0eeaaae530504159ce9589154c1",
+        "raw_file": "59d62c2cd9a0683a7084d0ffccf0b8101870a0eeaaae530504159ce9589154c1.html",
+        "source_title": "Watchman Trail (U.S. National Park Service)"
+      }
+    ],
+    "historical": {
+      "kind": "best_months",
+      "rows": [
+        {
+          "park_code": "ZION",
+          "park_name": "Zion National Park",
+          "month": 10,
+          "years": 21,
+          "rank": 1,
+          "eligible_months": 12,
+          "avg_temp_c": 11.44,
+          "total_precip_mm": 20.6,
+          "total_snowfall_cm": 0.0,
+          "recreation_visits": 314966.0,
+          "crowd_percentile": 45.45,
+          "weather_score": 88.89,
+          "crowd_score": 54.55,
+          "score": 76.87
+        }
+      ],
+      "source": "Live Supabase read-only parameterized query",
+      "years": [
+        2005,
+        2025
+      ],
+      "preferences": {
+        "temperature": [
+          15,
+          24
+        ],
+        "weather": 65,
+        "crowds": 35,
+        "minimum_years": 3,
+        "years": [
+          2005,
+          2025
+        ]
+      },
+      "checked_at": "2026-11-23T04:25:17.626345+00:00",
+      "message": "Showing up to three matches (up to six for a month comparison). Medians use complete paired years. Quiet parks ranks absolute visits; crowd percentiles compare months within each park. Historical averages are not forecasts or trail conditions."
+    },
+    "trails": {
+      "kind": "hikes",
+      "rows": [
+        {
+          "trail_id": "ZION-watchman",
+          "park_code": "ZION",
+          "name": "Watchman Trail",
+          "source_url": "https://www.nps.gov/thingstodo/hike-watchman-trail.htm",
+          "distance_miles": 3.3,
+          "distance_basis": "round trip",
+          "difficulty": "Moderate",
+          "elevation_ft": null,
+          "elevation_kind": "Full-route elevation gain",
+          "duration": "1\u20132 hours",
+          "trailhead": "Zion Canyon Visitor Center: follow the plaza sidewalk past the shuttle stop to the crosswalk, then follow the river to the trail.",
+          "description": "Climb from the river to an overlook of the Watchman, lower Zion Canyon, sandstone towers and Springdale.",
+          "season_note": "NPS lists year-round use, with potential muddy or icy conditions in winter and monsoon season and limited summer shade. This is general guidance, not a current condition report.",
+          "restrictions": "NPS prohibits bikes and pets. The route has sandy, rocky, uneven surfaces and drop-offs.",
+          "measurement_note": "The 3.3-mile distance describes the published round trip. NPS accessibility data gives separate overlook and loop segments; a full-route total elevation gain is not reported and is not inferred by summing segments.",
+          "permit_note": "NPS lists no reservations, but this does not establish all permit or current access requirements. Park entrance fees apply; check official guidance.",
+          "checked_at": "2026-11-23T04:07:45.505477+00:00",
+          "sha256": "59d62c2cd9a0683a7084d0ffccf0b8101870a0eeaaae530504159ce9589154c1",
+          "raw_file": "59d62c2cd9a0683a7084d0ffccf0b8101870a0eeaaae530504159ce9589154c1.html",
+          "source_title": "Watchman Trail (U.S. National Park Service)"
+        }
+      ],
+      "coverage": [
+        {
+          "park_code": "ZION",
+          "catalog_count": 3,
+          "matched_count": 1,
+          "unrated_count": 1,
+          "available_difficulties": [
+            "Easy",
+            "Moderate",
+            "Not reported"
+          ],
+          "status": "matched",
+          "alternatives": [
+            {
+              "name": "Riverside Walk",
+              "difficulty": "Easy",
+              "source_url": "https://www.nps.gov/thingstodo/hike-riverside-walk.htm"
+            },
+            {
+              "name": "Pa'rus Trail",
+              "difficulty": null,
+              "source_url": "https://www.nps.gov/thingstodo/hike-pa-rus-trail.htm"
+            },
+            {
+              "name": "Watchman Trail",
+              "difficulty": "Moderate",
+              "source_url": "https://www.nps.gov/thingstodo/hike-watchman-trail.htm"
+            }
+          ]
+        }
+      ],
+      "filters": {
+        "park_codes": [
+          "ZION"
+        ],
+        "difficulty": "Moderate"
+      },
+      "source": "Reviewed local NPS trail catalog (data/trails.json), not a Supabase trail table",
+      "message": "Showing up to three matching reviewed trails. Coverage is incomplete. Published difficulty ranges may include the requested grade; unknown ratings are excluded from a specific-grade search. Current permits and access need official confirmation."
+    }
+  },
+  "tests": {
+    "run": 38,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "verified_utc": "2026-11-23T04:37:37.545858+00:00",
+    "includes_readonly_live_supabase": true,
+    "llm_calls_in_suite": "Mocked; independent real API verification in reports/openai_verification.json",
+    "database_writes": 0
+  },
+  "screenshots": {
+    "park-guide.jpg": "../docs/screenshots/park-guide.jpg",
+    "eda-yellowstone.jpg": "../docs/screenshots/eda-yellowstone.jpg",
+    "assistant-configuration.jpg": "../docs/screenshots/assistant-configuration.jpg"
+  }
+}

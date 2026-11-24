@@ -1,0 +1,62 @@
+{
+  "verified_utc": "2026-11-24T17:22:27.866286+00:00",
+  "database_writes": 0,
+  "schema_changes": 0,
+  "cases": [
+    {
+      "question": "Where can I go camping?",
+      "planning": {
+        "provider": "OpenAI",
+        "response_id": "resp_073ce05ca3e78baa016b05c6a91f3487d2bea449e155675601",
+        "model": "gpt-6-luna",
+        "status": "completed",
+        "actual_service_tier": "default",
+        "input_tokens": 1327,
+        "output_tokens": 34,
+        "intent": "activities",
+        "verified_utc": "2026-11-24T17:17:31.745585+00:00"
+      },
+      "explanation": {
+        "provider": "OpenAI",
+        "response_id": "resp_040e01de7353e3ad016b05c6ab506487d2a8077c675ccba511",
+        "model": "gpt-6-luna",
+        "status": "completed",
+        "actual_service_tier": "default",
+        "input_tokens": 965,
+        "output_tokens": 94,
+        "intent": "grounded_answer",
+        "verified_utc": "2026-11-24T17:17:33.741997+00:00"
+      },
+      "browser_verified": true,
+      "result": "Natural explanation naming Arches, Black Canyon of the Gunnison and Bryce Canyon, with official NPS links and dated-content limitations."
+    },
+    {
+      "question": "Why would October be better than July in Zion, and what moderate hikes could I do?",
+      "planning": {
+        "provider": "OpenAI",
+        "response_id": "resp_019497d7eaae4493016b05c74d130887d2a97ff6f64c60e0d2",
+        "model": "gpt-6-luna",
+        "status": "completed",
+        "actual_service_tier": "default",
+        "input_tokens": 1369,
+        "output_tokens": 42,
+        "intent": "visit_and_hikes",
+        "verified_utc": "2026-11-24T17:20:15.599790+00:00"
+      },
+      "explanation": {
+        "provider": "OpenAI",
+        "response_id": "resp_0f0fdcf32d0a77db016b05c74fb1d087d2936df8189d76dcf9",
+        "model": "gpt-6-luna",
+        "status": "completed",
+        "actual_service_tier": "default",
+        "input_tokens": 1713,
+        "output_tokens": 217,
+        "intent": "grounded_answer",
+        "verified_utc": "2026-11-24T17:20:18.876167+00:00"
+      },
+      "browser_verified": true,
+      "result": "Explained historical October/July visits and temperatures, the cooler-weather tradeoff, and reviewed Watchman Trail details, with source links and historical-condition caveats."
+    }
+  ],
+  "limitations": "Not every question or external-service request is guaranteed. A prior attempt used explicitly labeled fallback, and the first combined synthesis was rejected by validation. Numeric-format equivalence was corrected and the combined request then succeeded. Mocked unit tests are separate from these provider-backed browser checks."
+}

@@ -1,0 +1,11 @@
+{
+  "run": 38,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 2,
+  "verified_utc": "2026-11-23T04:34:13.573383+00:00",
+  "default_model": "gpt-6-luna",
+  "requested_service_tier": "default",
+  "max_output_tokens": 384,
+  "live_api_verification": "reports/openai_verification.json"
+}

@@ -1,0 +1,197 @@
+{
+  "columns": [
+    {
+      "table_name": "parks",
+      "column_name": "park_code",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_name": "parks",
+      "column_name": "park_name",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_name": "parks",
+      "column_name": "state",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_name": "parks",
+      "column_name": "latitude",
+      "data_type": "double precision",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_name": "parks",
+      "column_name": "longitude",
+      "data_type": "double precision",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_name": "visitation",
+      "column_name": "park_code",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_name": "visitation",
+      "column_name": "year",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_name": "visitation",
+      "column_name": "month",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_name": "visitation",
+      "column_name": "recreation_visits",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_name": "weather",
+      "column_name": "park_code",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_name": "weather",
+      "column_name": "year",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_name": "weather",
+      "column_name": "month",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "table_name": "weather",
+      "column_name": "avg_temp_c",
+      "data_type": "double precision",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_name": "weather",
+      "column_name": "total_precip_mm",
+      "data_type": "double precision",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "table_name": "weather",
+      "column_name": "total_snowfall_cm",
+      "data_type": "double precision",
+      "is_nullable": "YES",
+      "column_default": null
+    }
+  ],
+  "constraints": [
+    {
+      "table_name": "parks",
+      "conname": "parks_pkey",
+      "contype": "p",
+      "convalidated": true,
+      "definition": "PRIMARY KEY (park_code)"
+    },
+    {
+      "table_name": "visitation",
+      "conname": "visitation_park_code_fkey",
+      "contype": "f",
+      "convalidated": true,
+      "definition": "FOREIGN KEY (park_code) REFERENCES parks(park_code)"
+    },
+    {
+      "table_name": "visitation",
+      "conname": "visitation_pkey",
+      "contype": "p",
+      "convalidated": true,
+      "definition": "PRIMARY KEY (park_code, year, month)"
+    },
+    {
+      "table_name": "weather",
+      "conname": "weather_park_code_fkey",
+      "contype": "f",
+      "convalidated": true,
+      "definition": "FOREIGN KEY (park_code) REFERENCES parks(park_code)"
+    },
+    {
+      "table_name": "weather",
+      "conname": "weather_pkey",
+      "contype": "p",
+      "convalidated": true,
+      "definition": "PRIMARY KEY (park_code, year, month)"
+    }
+  ],
+  "indexes": [
+    {
+      "tablename": "parks",
+      "indexname": "parks_pkey",
+      "indexdef": "CREATE UNIQUE INDEX parks_pkey ON public.parks USING btree (park_code)"
+    },
+    {
+      "tablename": "visitation",
+      "indexname": "visitation_pkey",
+      "indexdef": "CREATE UNIQUE INDEX visitation_pkey ON public.visitation USING btree (park_code, year, month)"
+    },
+    {
+      "tablename": "weather",
+      "indexname": "weather_pkey",
+      "indexdef": "CREATE UNIQUE INDEX weather_pkey ON public.weather USING btree (park_code, year, month)"
+    }
+  ],
+  "access": [
+    {
+      "table_name": "parks",
+      "rls_enabled": false,
+      "can_select": true,
+      "can_insert": true,
+      "can_update": true,
+      "can_delete": true
+    },
+    {
+      "table_name": "visitation",
+      "rls_enabled": false,
+      "can_select": true,
+      "can_insert": true,
+      "can_update": true,
+      "can_delete": true
+    },
+    {
+      "table_name": "weather",
+      "rls_enabled": false,
+      "can_select": true,
+      "can_insert": true,
+      "can_update": true,
+      "can_delete": true
+    }
+  ],
+  "session": [
+    {
+      "postgres_version": "17.11",
+      "transaction_read_only": "on",
+      "isolation": "repeatable read",
+      "snapshot_utc": "2026-11-19 14:58:40.038322+00:00"
+    }
+  ]
+}

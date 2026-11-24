@@ -1,0 +1,31 @@
+{
+  "verification_basis": "Retained live conversation evidence panels plus a new observed live Badlands comparison. Provider-returned usage comes from the application HTTPS Responses request, not model-generated text. Prior release did not retain response IDs. Corrected combined request subsequently confirmed by the user and by a durable provider receipt.",
+  "observed_calls": [
+    {
+      "intent": "compare_months",
+      "input_tokens": 1028,
+      "output_tokens": 37,
+      "model": "gpt-6-luna",
+      "service_tier": "default"
+    }
+  ],
+  "live_call_observed": true,
+  "weather_answer_without_trails_verified": true,
+  "credentials_recorded": false,
+  "remaining": "Catalog coverage remains incomplete; current NPS alerts need their separate API key.",
+  "corrected_combined_question_verified": true,
+  "latest_provider_receipt": {
+    "provider": "OpenAI",
+    "response_id": "resp_091180e458086bf9016b03c1a4809087d2a01e3be52edc4527",
+    "model": "gpt-6-luna",
+    "status": "completed",
+    "requested_service_tier": "default",
+    "actual_service_tier": "default",
+    "input_tokens": 1086,
+    "output_tokens": 37,
+    "intent": "visit_and_hikes",
+    "verified_utc": "2026-11-23T04:31:33.553503+00:00",
+    "llm_role": "Structured request interpretation; factual answer text is application-rendered"
+  },
+  "user_confirmed_corrected_zion_question_worked": true
+}

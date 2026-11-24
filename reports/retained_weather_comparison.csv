@@ -1,0 +1,4 @@
+field,overlap_rows,rows_different_above_1e_8,mean_absolute_difference,maximum_absolute_difference
+avg_temp_c,4536,3085,0.007146932747617516,0.041935483870967794
+total_precip_mm,4536,464,0.07052469135802482,13.400000000000006
+total_snowfall_cm,4536,206,0.01387345679012348,2.380000000000024
